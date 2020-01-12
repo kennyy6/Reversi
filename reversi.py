@@ -451,8 +451,8 @@ def next_state(board, player, pos):
 
 
 
-
-    return (board, next_player)
+    # Although x is badly worded here its just values we had to replace this is specfically for the  gui
+    return (board, next_player,x)
 
 
 ### similar to enclosing but rather than going forward go backwards to original
@@ -914,7 +914,8 @@ def max_values(board, player, pos):
 
 
 
-
+if __name__ == "__main__":
+    run_two_players()
 
 #print(run_single_player())
 #print(run_two_players())
